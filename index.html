@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+		<title>ГП МУРАС ПРИ УДПКР</title>
+	</head>
+	<body>
+		<header class="header">
+			<nav>
+				<div class="nav__bar">
+					<div class="logo">
+						<a href="#">MURAS-RESORT</a>
+					</div>
+					<div class="nav__menu__btn" id="menu-btn">
+						<i class="ri-menu-line"></i>
+					</div>
+				</div>
+				<ul class="nav__links" id="nav-links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#service">Services</a></li>
+					<li><a href="#explore">Explore</a></li>
+					<li><a href="#restaurant">Ресторан</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<button class="btn nav__btn">Book Now</button>
+			</nav>
+			<div class="section__container header__container" id="home">
+				<p>Роскошь - Отдых - Комфорт</p>
+				<h1>Только у нас<br />в <span>ГП МУРАС</span></h1>
+			</div>
+		</header>
+
+		<section class="section__container booking__container">
+			<form id="booking-form" class="booking__form">
+			   <div class="input__group">
+				  <span style="cursor: pointer;"><i class="ri-calendar-2-fill" id="check-in-icon"></i></span>
+				  <div>
+					 <label for="check-in">CHECK-IN</label>
+					 <input type="text" id="check-in" placeholder="Check In" />
+				  </div>
+			   </div>
+			   <div class="input__group">
+				  <span style="cursor: pointer;"><i class="ri-calendar-2-fill" id="check-out-icon"></i></span>
+				  <div>
+					 <label for="check-out">CHECK-OUT</label>
+					 <input type="text" id="check-out" placeholder="Check Out" />
+				  </div>
+			   </div>
+			   <div class="input__group">
+				  <span><i class="ri-user-fill"></i></span>
+				  <div>
+					 <label for="guest">GUEST</label>
+					 <input type="text" id="guest" placeholder="Guest" />
+				  </div>
+			   </div>
+			   <div class="input__group">
+				<span><i class="ri-phone-fill"></i></span>
+				<div>
+					<label for="phone-number">PHONE NUMBER</label>
+					<input type="text" id="phone-number" placeholder="+996" required />
+				</div>
+			</div>
+			   <div class="input__group input__btn">
+				  <button class="btn">CHECK OUT</button>
+			   </div>
+			</form>
+		 </section>
+		 
+
+		<section class="section__container about__container" id="about">
+			<div class="about__image">
+				<img src="assets/about.jpg" alt="about" />
+			</div>
+			<div class="about__content">
+				<p class="section__subheader">ABOUT US</p>
+				<h2 class="section__header">Хороший отпуск начинается с нами</h2>
+				<p class="section__description">
+          <p>
+            "Отельный комплекс «Мурас (Витязь)» – излюбленное место для отдыха
+            вблизи аэропорта «Иссык-Куль», расположенный в сердце курортной
+            зоны Чок-Тал. В этом уникальном комплексе каждый коттедж имеет
+            свой неповторимый стиль и название, отражающее его архитектурные
+            особенности. Гостям предоставляется широкий выбор размещения – от
+            отдельно стоящих домов до студий и апартаментов на одном или двух
+            этажах. В каждом номере обеспечен комфорт с современной мебелью и
+            техникой, а также собственным душем и санузлом, регулируемым
+            отоплением и кухонной зоной. Комплекс ориентирован прежде всего на
+            семейный отдых, однако стремится угодить каждой категории гостей.
+            Для маленьких посетителей здесь обустроены три игровые площадки, а
+            также проводятся разнообразные анимационные программы, доступны
+            услуги няни. На территории комплекса множество заведений
+            общественного питания, предлагающих блюда русской, европейской и
+            местной кухни. Любителям активного отдыха предлагаются открытые
+            спортивные площадки с искусственным покрытием. А для более
+            спокойного времяпрепровождения здесь есть возможность поиграть в
+            бильярд или настольный теннис. А для тех, кто предпочитает веселые
+            вечеринки, в ресторане на берегу работает диско-бар. Пляж отеля
+            оснащен собственным парком и небольшим участком песчаного берега с
+            примесью гальки."
+          </p>
+				</p>
+				<div class="about__btn">
+					<button class="btn">Read More</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="section__container room__container">
+			<p class="section__subheader">Апартаменты</p>
+			<h2 class="section__header">Наши апартаменты</h2>
+			<div class="room__grid">
+				<div class="room__card">
+					<div class="room__card__image">
+						<img src="assets/president-appartament1.jpeg" alt="room" />
+						<div class="room__card__icons">
+							<span><i class="ri-heart-fill"></i></span>
+							<span><i class="ri-paint-fill"></i></span>
+							<span><i class="ri-shield-star-line"></i></span>
+						</div>
+					</div>
+					<div class="room__card__details">
+						<h4>Deluxe Ocean View</h4>
+						<p>
+							Bask in luxury with breathtaking ocean views from your private
+							suite.
+						</p>
+						<h5>Starting from <span>$299/night</span></h5>
+						<button class="btn">Book Now</button>
+						<button class="btn">Посмотреть все</button>
+					</div>
+				</div>
+				<div class="room__card">
+					<div class="room__card__image">
+						<img src="assets/bashnya1.jpeg" alt="room" />
+						<div class="room__card__icons">
+							<span><i class="ri-heart-fill"></i></span>
+							<span><i class="ri-paint-fill"></i></span>
+							<span><i class="ri-shield-star-line"></i></span>
+						</div>
+					</div>
+					<div class="room__card__details">
+						<h4>Deluxe Ocean View</h4>
+						<p>
+							Bask in luxury with breathtaking ocean views from your private
+							suite.
+						</p>
+						<h5>Starting from <span>$299/night</span></h5>
+						<button class="btn">Book Now</button>
+						<button class="btn">Посмотреть все</button>
+					</div>
+				</div>
+				<div class="room__card">
+					<div class="room__card__image">
+						<img src="assets/kolizey1.jpeg" alt="room" />
+						<div class="room__card__icons">
+							<span><i class="ri-heart-fill"></i></span>
+							<span><i class="ri-paint-fill"></i></span>
+							<span><i class="ri-shield-star-line"></i></span>
+						</div>
+					</div>
+					<div class="room__card__details">
+						<h4>Deluxe Ocean View</h4>
+						<p>
+							Bask in luxury with breathtaking ocean views from your private
+							suite.
+						</p>
+						<h5>Starting from <span>$299/night</span></h5>
+						<button class="btn">Book Now</button>
+						<button class="btn">Посмотреть все</button>
+					</div>
+				</div>
+				<div class="room__card">
+					<div class="room__card__image">
+						<img src="assets/korpus1.jpeg" alt="room" />
+						<div class="room__card__icons">
+							<span><i class="ri-heart-fill"></i></span>
+							<span><i class="ri-paint-fill"></i></span>
+							<span><i class="ri-shield-star-line"></i></span>
+						</div>
+					</div>
+					<div class="room__card__details">
+						<h4>Deluxe Ocean View</h4>
+						<p>
+							Bask in luxury with breathtaking ocean views from your private
+							suite.
+						</p>
+						<h5>Starting from <span>$299/night</span></h5>
+						<button class="btn">Book Now</button>
+						<button class="btn">Посмотреть все</button>
+					</div>
+				</div>
+				<div class="room__card">
+					<div class="room__card__image">
+						<img src="assets/kub1.jpeg" alt="room" />
+						<div class="room__card__icons">
+							<span><i class="ri-heart-fill"></i></span>
+							<span><i class="ri-paint-fill"></i></span>
+							<span><i class="ri-shield-star-line"></i></span>
+						</div>
+					</div>
+					<div class="room__card__details">
+						<h4>Deluxe Ocean View</h4>
+						<p>
+							Bask in luxury with breathtaking ocean views from your private
+							suite.
+						</p>
+						<h5>Starting from <span>$299/night</span></h5>
+						<button class="btn">Book Now</button>
+						<button class="btn">Посмотреть все</button>
+					</div>
+				</div>
+				<div class="room__card">
+					<div class="room__card__image">
+						<img src="assets/skvorechnik.jpeg" alt="room" />
+						<div class="room__card__icons">
+							<span><i class="ri-heart-fill"></i></span>
+							<span><i class="ri-paint-fill"></i></span>
+							<span><i class="ri-shield-star-line"></i></span>
+						</div>
+					</div>
+					<div class="room__card__details">
+						<h4>Deluxe Ocean View</h4>
+						<p>
+							Bask in luxury with breathtaking ocean views from your private
+							suite.
+						</p>
+						<h5>Starting from <span>$299/night</span></h5>
+						<button class="btn">Book Now</button>
+						<button class="btn">Посмотреть все</button>
+					</div>
+				</div>
+				<div class="room__card">
+					<div class="room__card__image">
+						<img src="assets/finskiydom.jpg" alt="room" />
+						<div class="room__card__icons">
+							<span><i class="ri-heart-fill"></i></span>
+							<span><i class="ri-paint-fill"></i></span>
+							<span><i class="ri-shield-star-line"></i></span>
+						</div>
+					</div>
+					<div class="room__card__details">
+						<h4>Deluxe Ocean View</h4>
+						<p>
+							Bask in luxury with breathtaking ocean views from your private
+							suite.
+						</p>
+						<h5>Starting from <span>$299/night</span></h5>
+						<button class="btn">Book Now</button>
+						<button class="btn">Посмотреть все</button>
+					</div>
+				</div>
+				<div class="room__card">
+					<div class="room__card__image">
+						<img src="assets/korpus.jpg" alt="room" />
+						<div class="room__card__icons">
+							<span><i class="ri-heart-fill"></i></span>
+							<span><i class="ri-paint-fill"></i></span>
+							<span><i class="ri-shield-star-line"></i></span>
+						</div>
+					</div>
+					<div class="room__card__details">
+						<h4>Deluxe Ocean View</h4>
+						<p>
+							Bask in luxury with breathtaking ocean views from your private
+							suite.
+						</p>
+						<h5>Starting from <span>$299/night</span></h5>
+						<button class="btn">Book Now</button>
+						<button class="btn">Посмотреть все</button>
+					</div>
+				</div>
+				<div class="room__card">
+					<div class="room__card__image">
+						<img src="/assets/kubik.jpg" alt="room" />
+						<div class="room__card__icons">
+							<span><i class="ri-heart-fill"></i></span>
+							<span><i class="ri-paint-fill"></i></span>
+							<span><i class="ri-shield-star-line"></i></span>
+						</div>
+					</div>
+					<div class="room__card__details">
+						<h4>Deluxe Ocean View</h4>
+						<p>
+							Bask in luxury with breathtaking ocean views from your private
+							suite.
+						</p>
+						<h5>Starting from <span>$299/night</span></h5>
+						<button class="btn">Book Now</button>
+						<button class="btn">Посмотреть все</button>
+					</div>
+				</div>
+				<div class="room__card">
+					<div class="room__card__image">
+						<img src="assets/kub.jpg" alt="room" />
+						<div class="room__card__icons">
+							<span><i class="ri-heart-fill"></i></span>
+							<span><i class="ri-paint-fill"></i></span>
+							<span><i class="ri-shield-star-line"></i></span>
+						</div>
+					</div>
+					<div class="room__card__details">
+						<h4>Deluxe Ocean View</h4>
+						<p>
+							Bask in luxury with breathtaking ocean views from your private
+							suite.
+						</p>
+						<h5>Starting from <span>$299/night</span></h5>
+						<button class="btn">Book Now</button>
+						<button class="btn">Посмотреть все</button>
+					</div>
+				</div>
+				<div class="room__card">
+					<div class="room__card__image">
+						<img src="assets/townhouse.jpg" alt="room" />
+						<div class="room__card__icons">
+							<span><i class="ri-heart-fill"></i></span>
+							<span><i class="ri-paint-fill"></i></span>
+							<span><i class="ri-shield-star-line"></i></span>
+						</div>
+					</div>
+					<div class="room__card__details">
+						<h4>Deluxe Ocean View</h4>
+						<p>
+							Bask in luxury with breathtaking ocean views from your private
+							suite.
+						</p>
+						<h5>Starting from <span>$299/night</span></h5>
+						<button class="btn">Book Now</button>
+						<button class="btn">Посмотреть все</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="service" id="service">
+			<div class="section__container service__container">
+				<div class="service__content">
+					<p class="section__subheader">SERVICES</p>
+					<h2 class="section__header">Strive Only For The Best.</h2>
+					<ul class="service__list">
+						<li>
+							<span><i class="ri-shield-star-line"></i></span>
+							High Class Security
+						</li>
+						<li>
+							<span><i class="ri-24-hours-line"></i></span>
+							24 Hours Room Service
+						</li>
+						<li>
+							<span><i class="ri-headphone-line"></i></span>
+							Conference Room
+						</li>
+						<li>
+							<span><i class="ri-map-2-line"></i></span>
+							Tourist Guide Support
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="section__container banner__container">
+			<div class="banner__content">
+				<div class="banner__card">
+					<h4>25+</h4>
+					<p>Properties Available</p>
+				</div>
+				<div class="banner__card">
+					<h4>350+</h4>
+					<p>Bookings Completed</p>
+				</div>
+				<div class="banner__card">
+					<h4>600+</h4>
+					<p>Happy Customers</p>
+				</div>
+			</div>
+		</section>
+    <section class="section__container about__container" id="restaurant">
+			<div class="about__image">
+				<img src="/assets/11646574_sG5xBHvYusdxhhcMIdlXfWUle-kpHMONDYI7re8WyGs.jpg" alt="about" />
+			</div>
+			<div class="about__content">
+				<p class="section__subheader">Ресторан</p>
+				<h2 class="section__header">Витязь</h2>
+				<p class="section__description">
+          <p>
+            "Отельный комплекс «Мурас (Витязь)» – излюбленное место для отдыха
+            вблизи аэропорта «Иссык-Куль», расположенный в сердце курортной
+            зоны Чок-Тал. В этом уникальном комплексе каждый коттедж имеет
+            свой неповторимый стиль и название, отражающее его архитектурные
+            особенности. Гостям предоставляется широкий выбор размещения – от
+            отдельно стоящих домов до студий и апартаментов на одном или двух
+            этажах. В каждом номере обеспечен комфорт с современной мебелью и
+            техникой, а также собственным душем и санузлом, регулируемым
+            отоплением и кухонной зоной. Комплекс ориентирован прежде всего на
+            семейный отдых, однако стремится угодить каждой категории гостей.
+            Для маленьких посетителей здесь обустроены три игровые площадки, а
+            также проводятся разнообразные анимационные программы, доступны
+            услуги няни. На территории комплекса множество заведений
+            общественного питания, предлагающих блюда русской, европейской и
+            местной кухни. Любителям активного отдыха предлагаются открытые
+            спортивные площадки с искусственным покрытием. А для более
+            спокойного времяпрепровождения здесь есть возможность поиграть в
+            бильярд или настольный теннис. А для тех, кто предпочитает веселые
+            вечеринки, в ресторане на берегу работает диско-бар. Пляж отеля
+            оснащен собственным парком и небольшим участком песчаного берега с
+            примесью гальки."
+          </p>
+				</p>
+				<div class="about__btn">
+					<button class="btn">Read More</button>
+				</div>
+			</div>
+		</section>
+    <section class="section__container about__container" >
+
+			<div class="about__content">
+				<p class="section__subheader">Ресто-бар </p>
+				<h2 class="section__header">AVA</h2>
+				<p class="section__description">
+          <p>
+						"Ресто-бар AVA на территории ГП МУРАС - это оазис уюта и вкуса в самом сердце городского парка. Сочетая в себе стильный интерьер с уютной атмосферой, AVA предлагает гостям неповторимый опыт отдыха и наслаждения. Меню заведения богато разнообразными блюдами, включая изысканные закуски, освежающие напитки и эксклюзивные коктейли. Специально подобранный кулинарный опыт сочетается с внимательным обслуживанием, чтобы каждый посетитель мог насладиться превосходным вкусом и приятной атмосферой. Вечером AVA превращается в место встречи для тех, кто ценит качественную кухню и хорошую компанию, делая его идеальным выбором для отдыха и развлечений."
+          </p>
+				</p>
+				<div class="about__btn">
+					<button class="btn">Read More</button>		
+          	
+				</div>
+			</div><div class="about__image">
+				<img src="/assets/photo1714120733.jpeg" alt="about" />
+			</div>
+		</section>
+		<section class="explore" id="explore">
+			<p class="section__subheader">EXPLORE</p>
+			<h2 class="section__header">What's New Today.</h2>
+			<div class="explore__bg">
+				<div class="explore__content">
+					<p class="section__description">10th MAR 2023</p>
+					<h4>A New Menu Is Available In Our Hotel.</h4>
+					<button class="btn">Continue</button>
+				</div>
+				<div class="explore__content">
+					<p class="section__description">10th MAR 2023</p>
+					<h4>A New Menu Is Available In Our Hotel.</h4>
+					<button class="btn">Continue</button>
+				</div>
+				<div class="explore__content">
+					<p class="section__description">10th MAR 2023</p>
+					<h4>A New Menu Is Available In Our Hotel.</h4>
+					<button class="btn">Continue</button>
+				</div>
+			</div>
+		</section>
+
+			<!--!MAP-->
+			<section class="map-container" id="map">
+				<h1>Мы находимся тут</h1>
+
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.8785232267237!2d76.741519!3d42.57910079999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3884c399dbeb168b%3A0x3efe56717d27d6b3!2z0J7RgtC10LvRjCAi0JzRg9GA0LDRgSI!5e0!3m2!1sru!2skg!4v1705493626231!5m2!1sru!2skg"
+					width="600"
+					height="450"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</section>
+		<footer class="footer" id="contact">
+			<div class="section__container footer__container">
+				<div class="footer__col">
+					<div class="logo">
+						<a href="#home">MURAS-RESORT</a>
+					</div>
+					<p class="section__description">
+						Discover a world of comfort, luxury, and adventure as you explore
+						our curated selection of hotels, making every moment of your getaway
+						truly extraordinary.
+					</p>
+					<button class="btn">Book Now</button>
+				</div>
+				<div class="footer__col">
+					<h4>QUICK LINKS</h4>
+					<ul class="footer__links">
+						<li><a href="#">Browse Destinations</a></li>
+						<li><a href="#">Special Offers Packages</a></li>
+						<li><a href="#">Room Types Amenities</a></li>
+						<li><a href="#">Customer Reviews Ratings</a></li>
+						<li><a href="#">Travel Tips Guides</a></li>
+					</ul>
+				</div>
+				<div class="footer__col">
+					<h4>OUR SERVICES</h4>
+					<ul class="footer__links">
+						<li><a href="#">Concierge Assistance</a></li>
+						<li><a href="#">Flexible Booking Options</a></li>
+						<li><a href="#">Airport Transfers</a></li>
+						<li><a href="#">Wellness Recreation</a></li>
+					</ul>
+				</div>
+				<div class="footer__col">
+					<h4>CONTACT US</h4>
+					<ul class="footer__links">
+						<li><a href="#">gp_muras.mail.ru</a></li>
+					</ul>
+					<div class="footer__socials">
+						<a href="#"><img src="assets/facebook.png" alt="facebook" /></a>
+						<a href="#"><img src="assets/instagram.png" alt="instagram" /></a>
+						<a href="#"><img src="assets/youtube.png" alt="youtube" /></a>
+						<a href="#"><img src="assets/twitter.png" alt="twitter" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bar">
+				Разработан © 2024 Канат А. Все права защищены.
+			</div>
+		</footer>
+
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
