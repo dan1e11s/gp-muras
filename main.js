@@ -126,3 +126,135 @@ ScrollReveal().reveal('.service__list li', {
   interval: 500,
   origin: 'right',
 });
+
+const roomImages = [
+  {
+    id: '1',
+    url: 'assets/president-appartament1.jpeg',
+    alt: 'room',
+  },
+  {
+    id: '1',
+    url: 'assets/president-appartament1.jpeg',
+    alt: 'room',
+  },
+  {
+    id: '1',
+    url: 'assets/president-appartament1.jpeg',
+    alt: 'room',
+  },
+  {
+    id: '1',
+    url: 'assets/president-appartament1.jpeg',
+    alt: 'room',
+  },
+  {
+    id: '2',
+    url: 'assets/bashnya1.jpeg',
+    alt: 'room',
+  },
+  {
+    id: '2',
+    url: 'assets/bashnya1.jpeg',
+    alt: 'room',
+  },
+  {
+    id: '3',
+    url: 'assets/kolizey1.jpeg',
+    alt: 'room',
+  },
+  {
+    id: '4',
+    url: 'assets/korpus1.jpeg',
+    alt: 'room',
+  },
+  {
+    id: '5',
+    url: 'assets/kub1.jpeg',
+    alt: 'room',
+  },
+  {
+    id: '6',
+    url: 'assets/skvorechnik.jpeg',
+    alt: 'room',
+  },
+  {
+    id: '7',
+    url: 'assets/finskiydom.jpg',
+    alt: 'room',
+  },
+  {
+    id: '8',
+    url: 'assets/korpus.jpg',
+    alt: 'room',
+  },
+  {
+    id: '9',
+    url: 'assets/kubik.jpg',
+    alt: 'room',
+  },
+  {
+    id: '10',
+    url: 'assets/kub.jpg',
+    alt: 'room',
+  },
+  {
+    id: '11',
+    url: 'assets/townhouse.jpg',
+    alt: 'room',
+  },
+];
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('modal');
+  const closeBtn = document.querySelector('.close');
+  const swiperWrapper = document.getElementById('swiper-wrapper');
+  const rooms = document.querySelectorAll('.room__card');
+
+  function openModal(filteredImages) {
+    swiperWrapper.innerHTML = '';
+
+    filteredImages.forEach((image) => {
+      const slide = document.createElement('div');
+      slide.classList.add('swiper-slide');
+      const img = document.createElement('img');
+      img.src = image.url;
+      slide.appendChild(img);
+      swiperWrapper.appendChild(slide);
+    });
+
+    new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    modal.style.display = 'flex';
+  }
+
+  rooms.forEach((room) => {
+    const button = room.querySelector('.view-all');
+    const roomId = room.getAttribute('id');
+
+    button.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      const filteredImages = roomImages.filter((image) => image.id === roomId);
+
+      openModal(filteredImages);
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalContent.style.display = 'none';
+  });
+
+  window.addEventListener('click', (event) => {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+      modalContent.style.display = 'none';
+    }
+  });
+});

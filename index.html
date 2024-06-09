@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 		<link
 			href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
 			rel="stylesheet" />
@@ -117,7 +118,7 @@
 			<p class="section__subheader">Апартаменты</p>
 			<h2 class="section__header">Наши апартаменты</h2>
 			<div class="room__grid">
-				<div class="room__card">
+				<div class="room__card" id="1">
 					<div class="room__card__image">
 						<img src="assets/president-appartament1.jpeg" alt="room" />
 						<div class="room__card__icons">
@@ -134,10 +135,10 @@
 						</p>
 						<h5>Starting from <span>$299/night</span></h5>
 						<button class="btn">Book Now</button>
-						<button class="btn">Посмотреть все</button>
+						<button class="btn view-all">Посмотреть все</button>
 					</div>
 				</div>
-				<div class="room__card">
+				<div class="room__card" id="2">
 					<div class="room__card__image">
 						<img src="assets/bashnya1.jpeg" alt="room" />
 						<div class="room__card__icons">
@@ -154,10 +155,10 @@
 						</p>
 						<h5>Starting from <span>$299/night</span></h5>
 						<button class="btn">Book Now</button>
-						<button class="btn">Посмотреть все</button>
+						<button class="btn view-all">Посмотреть все</button>
 					</div>
 				</div>
-				<div class="room__card">
+				<div class="room__card" id="3">
 					<div class="room__card__image">
 						<img src="assets/kolizey1.jpeg" alt="room" />
 						<div class="room__card__icons">
@@ -174,10 +175,10 @@
 						</p>
 						<h5>Starting from <span>$299/night</span></h5>
 						<button class="btn">Book Now</button>
-						<button class="btn">Посмотреть все</button>
+						<button class="btn view-all">Посмотреть все</button>
 					</div>
 				</div>
-				<div class="room__card">
+				<div class="room__card" id="4">
 					<div class="room__card__image">
 						<img src="assets/korpus1.jpeg" alt="room" />
 						<div class="room__card__icons">
@@ -194,10 +195,10 @@
 						</p>
 						<h5>Starting from <span>$299/night</span></h5>
 						<button class="btn">Book Now</button>
-						<button class="btn">Посмотреть все</button>
+						<button class="btn view-all">Посмотреть все</button>
 					</div>
 				</div>
-				<div class="room__card">
+				<div class="room__card" id="5">
 					<div class="room__card__image">
 						<img src="assets/kub1.jpeg" alt="room" />
 						<div class="room__card__icons">
@@ -214,10 +215,10 @@
 						</p>
 						<h5>Starting from <span>$299/night</span></h5>
 						<button class="btn">Book Now</button>
-						<button class="btn">Посмотреть все</button>
+						<button class="btn view-all">Посмотреть все</button>
 					</div>
 				</div>
-				<div class="room__card">
+				<div class="room__card" id="6">
 					<div class="room__card__image">
 						<img src="assets/skvorechnik.jpeg" alt="room" />
 						<div class="room__card__icons">
@@ -234,10 +235,10 @@
 						</p>
 						<h5>Starting from <span>$299/night</span></h5>
 						<button class="btn">Book Now</button>
-						<button class="btn">Посмотреть все</button>
+						<button class="btn view-all">Посмотреть все</button>
 					</div>
 				</div>
-				<div class="room__card">
+				<div class="room__card" id="7">
 					<div class="room__card__image">
 						<img src="assets/finskiydom.jpg" alt="room" />
 						<div class="room__card__icons">
@@ -254,10 +255,10 @@
 						</p>
 						<h5>Starting from <span>$299/night</span></h5>
 						<button class="btn">Book Now</button>
-						<button class="btn">Посмотреть все</button>
+						<button class="btn view-all">Посмотреть все</button>
 					</div>
 				</div>
-				<div class="room__card">
+				<div class="room__card" id="8">
 					<div class="room__card__image">
 						<img src="assets/korpus.jpg" alt="room" />
 						<div class="room__card__icons">
@@ -274,10 +275,10 @@
 						</p>
 						<h5>Starting from <span>$299/night</span></h5>
 						<button class="btn">Book Now</button>
-						<button class="btn">Посмотреть все</button>
+						<button class="btn view-all">Посмотреть все</button>
 					</div>
 				</div>
-				<div class="room__card">
+				<div class="room__card" id="9">
 					<div class="room__card__image">
 						<img src="/assets/kubik.jpg" alt="room" />
 						<div class="room__card__icons">
@@ -294,10 +295,10 @@
 						</p>
 						<h5>Starting from <span>$299/night</span></h5>
 						<button class="btn">Book Now</button>
-						<button class="btn">Посмотреть все</button>
+						<button class="btn view-all">Посмотреть все</button>
 					</div>
 				</div>
-				<div class="room__card">
+				<div class="room__card" id="10">
 					<div class="room__card__image">
 						<img src="assets/kub.jpg" alt="room" />
 						<div class="room__card__icons">
@@ -314,10 +315,10 @@
 						</p>
 						<h5>Starting from <span>$299/night</span></h5>
 						<button class="btn">Book Now</button>
-						<button class="btn">Посмотреть все</button>
+						<button class="btn view-all">Посмотреть все</button>
 					</div>
 				</div>
-				<div class="room__card">
+				<div class="room__card" id="11">
 					<div class="room__card__image">
 						<img src="assets/townhouse.jpg" alt="room" />
 						<div class="room__card__icons">
@@ -334,7 +335,7 @@
 						</p>
 						<h5>Starting from <span>$299/night</span></h5>
 						<button class="btn">Book Now</button>
-						<button class="btn">Посмотреть все</button>
+						<button class="btn view-all">Посмотреть все</button>
 					</div>
 				</div>
 			</div>
@@ -523,6 +524,19 @@
 			</div>
 		</footer>
 
+		<div id="modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="swiper-container">
+					<div class="swiper-wrapper" id="swiper-wrapper">
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<script src="https://unpkg.com/scrollreveal"></script>
 		<script src="main.js"></script>
 	</body>
